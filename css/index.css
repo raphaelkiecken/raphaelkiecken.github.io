@@ -47,15 +47,15 @@
   transition: all ease 300ms;
 }
 
-#accueil {
+#cv {
   border: 4px solid rgb(200, 5, 5);
 }
 
-#accueil a {
+#cv a {
   color: rgb(200, 5, 5);
 }
 
-#accueil a:hover {
+#cv a:hover {
   background-color: rgba(200, 5, 5, 0.750);
   text-decoration: none;
   color: white;
