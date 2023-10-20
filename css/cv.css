@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: 'PlaypenSans';
+  background-color: black;
 }
 
 section {
@@ -18,8 +19,12 @@ section {
   display: flex;
 }
 
-div:nth-of-type(2n) {
+section:nth-of-type(odd) .container {
   box-shadow: 12px 6px 8px rgba(0, 0, 0, 0.8);
+}
+
+section:nth-of-type(even) .container {
+  box-shadow: -12px 6px 8px rgba(0, 0, 0, 0.8);
 }
 
 ul {
@@ -74,6 +79,7 @@ section ul li {
 
 #personnel {
   background-image: url("https://cdn.drouot.com/d/image/lot?size=fullHD&path=1580/119391/705a6c0da58f2cd83f65e16dd6a008b7");
+  border-top: var(--separation-color) solid 15px;
   justify-content: space-around;
 }
 
@@ -124,4 +130,54 @@ section ul li {
 #experience {
   background-image: url("https://master.salamandre.net/media/21606/la-riviere-et-ses-reflets-scintillants-1800x1016.jpg");
   justify-content: end;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  section {
+    flex-direction: column;
+  }
+
+  .container {
+    color: rgb(0, 0, 0);
+    background-color: var(--section-background-color);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 2%;
+    width: 80%;
+    height: fit-content;
+    justify-self: center;
+  }
+
+  section:nth-of-type(n) .container {
+    box-shadow: none;
+  }
+
+  #personnel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  #personnel ul {
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 0px 20px;
+  }
+
+  #photo-profil {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 125px;
+    height: 125px;
+    z-index: 10;
+    top: 100px;
+    right: 50px;
+    position: absolute;
+  }
+
+  #personnel .container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
 }
