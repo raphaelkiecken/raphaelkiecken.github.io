@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cv.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="icon" href="../img/icon.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cv.css">
+    <script src="../script/cv.js"></script>
+    <link rel="icon" href="../img/icon.jpg">
     <title>Raphaël KIECKEN - CV</title>
   </head>
   <body>
     <section id="personnel">
       <div id="photo-profil">
-        <img src="../img/icon.jpg" alt="Photo de profil" />
+        <img src="../img/icon.jpg" alt="Photo de profil">
       </div>
       <div class="container">
         <h1>Raphaël KIECKEN</h1>
-        <hr class="rounded" />
+        <hr class="rounded">
         <ul>
-          <li>Homme</li>
           <li>19 ans</li>
           <li>Français</li>
         </ul>
-        <hr class="rounded"/>
+        <hr class="rounded">
         <ul>
           <li>raphael.kiecken.etu@univ-lille.fr</li>
-          <li>07 68 38 80 18 38</li>
+          <li>07 68 80 18 38</li>
         </ul>
       </div>
     </section>
@@ -43,8 +42,8 @@
             <span class="intitule">Baccalauréat Général</span>
             <span class="date">Septembre 2022</span>
             <p class="description">
-              <span class="underline">Mention</span> : Bien<br>
-              <span class="underline">Spécialités</span> : NSI (Numérique et Science Informatique) et Mathématique
+              - <span class="underline">Mention</span> : Bien<br>
+              - <span class="underline">Spécialités</span> : NSI (Numérique et Science Informatique) et Mathématique
             </p>
           </li>
         </ul>
@@ -56,20 +55,52 @@
         <hr class="rounded">
         <ul>
           <li>
-            IUT de Lille, site Villeneuve-d'Ascq<br>
-            <span class="intitule">BUT Informatique</span>
-            <span class="date">Depuis 2022</span>
-          </li>
-          <li>
-            Institution Saint Jude, Armentières<br>
-            <span class="intitule">Baccalauréat Général</span>
-            <span class="date">Septembre 2022</span>
+            BNP Paribas, Armentières<br>
+            <span class="intitule">Chargé d'accueil</span>
+            <span class="date">Août 2022</span>
             <p class="description">
-              <span class="underline">Mention</span> : Bien<br>
-              <span class="underline">Spécialités</span> : NSI (Numérique et Science Informatique) et Mathématique
+              - Gestion des opérations courantes (dépôts, retraits, virements, ...)<br>
+              - Répondre aux demandes des clients<br>
+              - Accueil et orientation des clients dans l'agence<br>
+              - Assistance des clients dans l'utilisation des automates<br>
             </p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="competences">
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        
+        <div class="slides">
+          <h2>Langage</h2>
+          <hr class="rounded">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Python</li>
+          </ul>
+
+        </div>
+      
+        <div class="slides">
+        </div>
+      
+        <div class="slides">
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
   </body>
