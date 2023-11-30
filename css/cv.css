@@ -10,10 +10,13 @@
   padding: 0;
   font-family: 'PlaypenSans';
   background-color: black;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {
-  border-bottom: var(--separation-color) solid 15px;
+  border-top: var(--separation-color) solid 7.5px;
+  border-bottom: var(--separation-color) solid 7.5px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -40,6 +43,8 @@ section ul {
 section ul li {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: fit-content;
+  width: -moz-fit-content;
 }
 
 .container {
@@ -77,9 +82,12 @@ section ul li {
   text-decoration: underline;
 }
 
+#icon {
+  transform: scale(5);
+}
+
 #personnel {
   background-image: url("https://cdn.drouot.com/d/image/lot?size=fullHD&path=1580/119391/705a6c0da58f2cd83f65e16dd6a008b7");
-  border-top: var(--separation-color) solid 15px;
   justify-content: space-around;
 }
 
@@ -87,11 +95,13 @@ section ul li {
   flex-direction: row;
   font-size: 1.3em;
   margin: 0px 20px;
+  flex-wrap: wrap;
 }
 
 #personnel li {
   display: flex;
   align-items: center;
+  width: 50%;
   flex-grow: 1;
 }
 
@@ -131,6 +141,25 @@ section ul li {
   background-image: url("https://master.salamandre.net/media/21606/la-riviere-et-ses-reflets-scintillants-1800x1016.jpg");
   justify-content: end;
 }
+
+#competence {
+  background-image: url("https://master.salamandre.net/media/21606/la-riviere-et-ses-reflets-scintillants-1800x1016.jpg");
+}
+
+#competence ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#competence li {
+  padding: 0px 15px;
+}
+
+#competence .container {
+  width: fit-content;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
