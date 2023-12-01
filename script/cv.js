@@ -1,36 +1,42 @@
-let slideIndex = 1;
-let slides;
-let dots;
+let currentContent;
+let currentProfile = 0;
+let baseProfileTextHeight;
 
-window.onload = function() {
-  showSlides(slideIndex);
-}
-
-function plusSlides(n) {
-  showSlidesAndRecenter(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlidesAndRecenter(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  slides = document.getElementsByClassName("slides");
-  dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function changeContent(id) {
+  const content = document.getElementsByClassName('content');
+  const profilePic = document.getElementsByClassName('profile-pic');
+  const profileText = document.getElementsByClassName('profile-text');
+  if (currentContent === id) return;
+  if (currentContent === undefined) currentContent = id;
+  content[currentContent].style.display = 'none';
+  content[id].style.display = 'flex';
+  currentContent = id;
+  if (currentContent === 0) {
+    currentProfile = 0;
+    profilePic[currentProfile].style.opacity = '1';
+    profileText[currentProfile].style.opacity = '1';
+    profilePic[(currentProfile + 1) % 2].style.opacity = '0';
+    profileText[(currentProfile + 1) % 2].style.opacity = '0';
+    const profileTextContainer = document.getElementById('profile-text-container');
+    baseProfileTextHeight = profileTextContainer.offsetHeight;
+    profileTextContainer.style.height = baseProfileTextHeight + profileText[currentProfile].offsetHeight + 'px';
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
+}
 
-function showSlidesAndRecenter(n) {
-  showSlides(n);
-  window.scrollTo(0, slides[slideIndex-1].offsetTop);
+function changeProfile() {
+  const profileTextContainer = document.getElementById('profile-text-container');
+  const profilePic = document.getElementsByClassName('profile-pic');
+  const profileText = document.getElementsByClassName('profile-text');
+
+  profilePic[currentProfile].style.opacity = '0';
+  profileText[currentProfile].style.opacity = '0';
+
+  currentProfile = (currentProfile + 1) % 2;
+
+  profilePic[currentProfile].style.opacity = '1';
+  profileText[currentProfile].style.opacity = '1';
+
+
+
+  profileTextContainer.style.height = baseProfileTextHeight + profileText[currentProfile].offsetHeight + 'px';
 }

@@ -7,8 +7,8 @@
   --primary-color: #dabcaf;
   --secondary-color: rgb(146, 2, 2);
   background-image: url("https://cdn.drouot.com/d/image/lot?size=fullHD&path=1580/119391/705a6c0da58f2cd83f65e16dd6a008b7");
+  font-family: 'PlaypenSans';
 }
-
 
 * {
   margin: 0;
@@ -18,18 +18,74 @@
 header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  font-family: 'PlaypenSans';
-  margin: 0;
-  padding: 0;
-  position: sticky;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  list-style-type: none;
   flex-direction: row;
 }
 
-header h1 {
-  font-size: 2em;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.button {
+  color : var(--secondary-color);
+  border: 5px solid var(--secondary-color);
+  border-radius: 4px;
+  border-top: 0;
+  border-right: 0 ;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.content {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  height: 90vh;
+}
+
+.profile-pic, .profile-text {
+  opacity: 0;
+  transition: all ease 400ms;
+  position: absolute;
+}
+
+#profile-pic-container {
+  height: 250px;
+  width: 250px;
+  border-radius: 500px;
+  border: var(--secondary-color) double 10px;
+  overflow: hidden;
+  margin: 1%;
+  align-self: center;
+  position: relative;
+}
+
+.profile-pic {
+  height: 100%;
+  width: 100%;
+  transition: all ease 400ms;
+}
+
+#profile-text-container {
+  width: 75%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.rounded {
+  border: 5px solid var(--secondary-color);
+  border-radius: 5px;
+  margin: 10px 0px;
 }
