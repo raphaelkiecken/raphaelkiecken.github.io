@@ -7,17 +7,42 @@
   <link rel="stylesheet" href="css/index.css" />
   <link rel="icon" href="img/bear.jpg" />
   <script src="script/cv.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
   <title>Raphaël KIECKEN</title>
 </head>
 
 <header>
-  <h1>Raphaël KIECKEN</h1>
   <nav>
-    <ul>
-      <li><span class="button" onclick="changeContent(0)">PRESENTATION</span></li>
-      <li><span class="button" onclick="changeContent(1)">COMPETENCES</span></li>
-      <li><span class="button" onclick="changeContent(2)">FORMATIONS</span></li>
-      <li><span class="button" onclick="changeContent(3)">EXPERIENCES</span></li>
+    <ul id="menu">
+      <li>
+        <a onclick="changeContent(0)">
+          <div class="item-icon">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </div>
+          <span class="menu-element">PRESENTATION</span>
+      </li>
+      <li>
+        <a onclick="changeContent(1)">
+          <div class="item-icon">
+            <ion-icon name="construct-outline"></ion-icon>
+          </div>
+          <span class="menu-element">COMPETENCES</span>
+      </li>
+      <li>
+        <a onclick="changeContent(2)">
+          <div class="item-icon">
+            <ion-icon name="school-outline"></ion-icon>
+          </div>
+          <span class="menu-element">FORMATIONS</span>
+      </li>
+      <li>
+        <a onclick="changeContent(3)">
+          <div class="item-icon">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+          <span class="menu-element">EXPERIENCES</span>
+      </li>
     </ul>
   </nav>
 </header>
@@ -25,82 +50,73 @@
 
 <body>
 
-  <section class="content">
-    <div id="profile-pic-container">
-      <img class="profile-pic" src="img/bear.jpg" alt="Ours ressemblant étrangement à une tente"
-        onclick="changeProfile(0)" />
-      <img class="profile-pic" src="img/moi.JPG" alt="C'est moi wesh !" onclick="changeProfile(1)" />
-    </div>
-    <div id="profile-text-container">
+  <section id="content-container">
+    <div class="content" id="presentation">
       <h2>Présentation</h2>
+
       <hr class="rounded" />
-      <p class="profile-text">Et non ! Je ne suis pas un ours ! (Clique sur l'image)</p>
-      <p class="profile-text">
+
+      <p>
         Je m'appelle Raphaël KIECKEN, je suis étudiant en deuxième année de BUT Informatique à l'IUT A de
         Lille, site de Villeneuve-d'Asqc.
         J'ai été plongé dans l'univers du jeux vidéo très tôt et en grandissant j'ai commencé à me questionner sur
         comment était fait ces jeux qui avait bercé mon enfance.
         De fil en aiguille je me suis mis à apprécier le milieu de la programmation et à vouloir en faire mon
         métiers.
-        Je suis à la recherche d'un stage de 10 semaines à partir du .</p>
+        Je suis à la recherche d'un stage de 10 semaines à partir du .
+      </p>
     </div>
-  </section>
 
-  <section class="content">
-    <div>
+    <div class="content" id="competences">
       <h2>Compétences</h2>
-      <div id="competences-list">
-        <div class="competence">
+
+      <hr class="rounded" />
+
+      <ul id="competences-list">
+        <li>
           <h3>Langages</h3>
           <ul>
           </ul>
-        </div>
-        <div class="competence">
+        </li>
+        <li>
           <h3>Logiciels</h3>
           <ul>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </section>
 
-  <section class="content">
-    <div>
+    <div class="content" id="formation">
       <h2>Formation</h2>
-      <div id="formation-list">
-        <div class="formation">
-          <h3>IUT de Lille, site Villeneuve-d'Ascq</h3>
-          <p>BUT Informatique</p>
-          <p>Depuis 2020</p>
-        </div>
-        <div class="formation">
-          <h3>Institution Saint Jude, Armentières</h3>
-          <p>Baccalauréat Général</p>
-          <p>Septembre 2020</p>
-          <p>Mention : Bien</p>
-          <p>Spécialités : NSI (Numérique et Science Informatique) et Mathématique</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="content">
-    <div>
+      <hr class="rounded" />
+
+      <ul id="formation-list">
+        <li>IUT de Lille, site Villeneuve-d'Ascq <span class="date">Depuis 2022</span></li>
+        <li>Institution Saint Jude, Armentières <span class="intitule">Baccalauréat Général</span></li>
+      </ul>
+    </div>
+
+    <div class="content" id="experience">
       <h2>Expérience professionnelle</h2>
-      <div id="experience-list">
-        <div class="experience">
-          <h3>BNP Paribas, Armentières</h3>
-          <p>Chargé d'accueil</p>
-          <p>Août 2020</p>
-          <p>Gérer des opérations courantes liées aux comptes bancaires des clients</p>
-          <p>Accueil et orientation des clients dans l'agence bancaire</p>
-          <p>Assister les clients dans l'utilisation des automates bancaires</p>
-          <p>Contribuer à la satisfaction et à la fidélisation des clients par un service de qualité</p>
-        </div>
-      </div>
+
+      <hr class="rounded" />
+
+      <ul id="exeperience-list">
+        <li>BNP Paribas, Armentières <span class="date">Août 2022</span></li>
+      </ul>
     </div>
   </section>
 
 </body>
+
+<footer>
+  <h3>Me contacter</h3>
+  <ul>
+    <li><a href="mailto:raphael.kiecken.etu@univ-lille.fr"></a></li>
+    <li><a href="tel:+336 00 00 00 00"></a></li>
+  </ul>
+</footer>
+
 
 </html>

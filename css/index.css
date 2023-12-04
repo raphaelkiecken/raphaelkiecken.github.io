@@ -4,9 +4,7 @@
 }
 
 :root {
-  --primary-color: #dabcaf;
-  --secondary-color: rgb(146, 2, 2);
-  background-image: url("https://cdn.drouot.com/d/image/lot?size=fullHD&path=1580/119391/705a6c0da58f2cd83f65e16dd6a008b7");
+  background-color: antiquewhite;
   font-family: 'PlaypenSans';
 }
 
@@ -15,77 +13,64 @@
   padding: 0;
 }
 
-header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+#menu {
   display: flex;
-  justify-content: space-around;
-}
-
-header ul {
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-  list-style-type: none;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  height: 75px;
+  list-style-type: none;
+
+  background-color: aqua;
 }
 
-.button {
-  color : var(--secondary-color);
-  border: 5px solid var(--secondary-color);
-  border-radius: 4px;
-  border-top: 0;
-  border-right: 0 ;
-  padding: 5px;
+#menu li {
+  height: fit-content;
+  padding: 10px 15px;
   cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  background-color: red;
 }
 
-.button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  transition: all 0.5s ease;
+#content-container {
+  height: calc(100vh - 151px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-image: url("../img/wallpaper.jpg");
+  background-size: cover;
 }
 
 .content {
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  height: 90vh;
-}
-
-.profile-pic, .profile-text {
-  opacity: 0;
-  transition: all ease 400ms;
   position: absolute;
-}
+  display: block;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: calc(75%);
 
-#profile-pic-container {
-  height: 250px;
-  width: 250px;
-  border-radius: 500px;
-  border: var(--secondary-color) double 10px;
-  overflow: hidden;
-  margin: 1%;
-  align-self: center;
-  position: relative;
-}
-
-.profile-pic {
-  height: 100%;
-  width: 100%;
-  transition: all ease 400ms;
-}
-
-#profile-text-container {
-  width: 75%;
-  background-color: var(--primary-color);
+  padding: 10px 15px;
   border-radius: 10px;
-  margin: 1%;
-  padding: 1%;
+
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.rounded {
-  border: 5px solid var(--secondary-color);
-  border-radius: 5px;
-  margin: 10px 0px;
+#competence-list {
+  background-color: violet;
+}
+
+.competence {
+  background-color: red;
+}
+
+footer {
+  background-color: yellow;
+  height: 75px;
 }
