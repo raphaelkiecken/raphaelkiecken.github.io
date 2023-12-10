@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/bear.jpg" />
+    <script src="script/cv.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Raphaël KIECKEN</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="icon" href="img/bear.jpg" />
-  <script src="script/cv.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"></script>
-  <title>Raphaël KIECKEN</title>
-</head>
+  <header>
+    <nav>
+      <div class="navbar">
+        <ul class="container">
+          <li class="item active">
+            <a onclick="changeContent(0)" class="item-link">
+              <span class="item-text">PRESENTATION</span>
+              <div class="item-icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </div>
+            </a>
+          </li>
 
-<header>
-  <nav>
-    <ul id="menu">
-      <li>
-        <a onclick="changeContent(0)">
-          <div class="item-icon">
-            <ion-icon name="person-circle-outline"></ion-icon>
-          </div>
-          <span class="menu-element">PRESENTATION</span>
-      </li>
-      <li>
-        <a onclick="changeContent(1)">
-          <div class="item-icon">
-            <ion-icon name="construct-outline"></ion-icon>
-          </div>
-          <span class="menu-element">COMPETENCES</span>
-      </li>
-      <li>
-        <a onclick="changeContent(2)">
-          <div class="item-icon">
-            <ion-icon name="school-outline"></ion-icon>
-          </div>
-          <span class="menu-element">FORMATIONS</span>
-      </li>
-      <li>
-        <a onclick="changeContent(3)">
-          <div class="item-icon">
-            <ion-icon name="briefcase-outline"></ion-icon>
-          </div>
-          <span class="menu-element">EXPERIENCES</span>
-      </li>
+          <li class="item">
+            <a onclick="changeContent(1)" class="item-link">
+              <span class="item-text">COMPETENCES</span>
+              <div class="item-icon">
+                <ion-icon name="construct-outline"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a onclick="changeContent(2)" class="item-link">
+              <span class="item-text">FORMATIONS</span>
+              <div class="item-icon">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a onclick="changeContent(3)" class="item-link">
+              <span class="item-text">EXPERIENCES</span>
+              <div class="item-icon">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <section id="content-container">
+      <div class="content" id="presentation">
+        <h2>Présentation</h2>
+
+        <hr class="rounded" />
+
+        <p>
+          Je m'appelle Raphaël KIECKEN, je suis étudiant en deuxième année de
+          BUT Informatique à l'IUT A de Lille, site de Villeneuve-d'Asqc. J'ai
+          été plongé dans l'univers du jeux vidéo très tôt et en grandissant
+          j'ai commencé à me questionner sur comment était fait ces jeux qui
+          avait bercé mon enfance. De fil en aiguille je me suis mis à apprécier
+          le milieu de la programmation et à vouloir en faire mon métiers. Je
+          suis à la recherche d'un stage de 10 semaines à partir du .
+        </p>
+      </div>
+
+      <div class="content" id="competences">
+        <h2>Compétences</h2>
+
+        <hr class="rounded" />
+
+        <ul id="competences-list">
+          <li>
+            <h3>Langages</h3>
+            <ul></ul>
+          </li>
+          <li>
+            <h3>Logiciels</h3>
+            <ul></ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content" id="formation">
+        <h2>Formation</h2>
+
+        <hr class="rounded" />
+
+        <ul id="formation-list">
+          <li>
+            IUT de Lille, site Villeneuve-d'Ascq
+            <span class="date">Depuis 2022</span>
+          </li>
+          <li>
+            Institution Saint Jude, Armentières
+            <span class="intitule">Baccalauréat Général</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content" id="experience">
+        <h2>Expérience professionnelle</h2>
+
+        <hr class="rounded" />
+
+        <ul id="exeperience-list">
+          <li>BNP Paribas, Armentières <span class="date">Août 2022</span></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+
+  <footer>
+    <h3>Me contacter</h3>
+    <ul>
+      <li><a href="mailto:raphael.kiecken.etu@univ-lille.fr"></a></li>
+      <li><a href="tel:+336 00 00 00 00"></a></li>
     </ul>
-  </nav>
-</header>
-
-
-<body>
-
-  <section id="content-container">
-    <div class="content" id="presentation">
-      <h2>Présentation</h2>
-
-      <hr class="rounded" />
-
-      <p>
-        Je m'appelle Raphaël KIECKEN, je suis étudiant en deuxième année de BUT Informatique à l'IUT A de
-        Lille, site de Villeneuve-d'Asqc.
-        J'ai été plongé dans l'univers du jeux vidéo très tôt et en grandissant j'ai commencé à me questionner sur
-        comment était fait ces jeux qui avait bercé mon enfance.
-        De fil en aiguille je me suis mis à apprécier le milieu de la programmation et à vouloir en faire mon
-        métiers.
-        Je suis à la recherche d'un stage de 10 semaines à partir du .
-      </p>
-    </div>
-
-    <div class="content" id="competences">
-      <h2>Compétences</h2>
-
-      <hr class="rounded" />
-
-      <ul id="competences-list">
-        <li>
-          <h3>Langages</h3>
-          <ul>
-          </ul>
-        </li>
-        <li>
-          <h3>Logiciels</h3>
-          <ul>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="content" id="formation">
-      <h2>Formation</h2>
-
-      <hr class="rounded" />
-
-      <ul id="formation-list">
-        <li>IUT de Lille, site Villeneuve-d'Ascq <span class="date">Depuis 2022</span></li>
-        <li>Institution Saint Jude, Armentières <span class="intitule">Baccalauréat Général</span></li>
-      </ul>
-    </div>
-
-    <div class="content" id="experience">
-      <h2>Expérience professionnelle</h2>
-
-      <hr class="rounded" />
-
-      <ul id="exeperience-list">
-        <li>BNP Paribas, Armentières <span class="date">Août 2022</span></li>
-      </ul>
-    </div>
-  </section>
-
-</body>
-
-<footer>
-  <h3>Me contacter</h3>
-  <ul>
-    <li><a href="mailto:raphael.kiecken.etu@univ-lille.fr"></a></li>
-    <li><a href="tel:+336 00 00 00 00"></a></li>
-  </ul>
-</footer>
-
-
+  </footer>
 </html>

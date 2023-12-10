@@ -1,39 +1,67 @@
 @font-face {
-  font-family: 'PlaypenSans';
+  font-family: "PlaypenSans";
   src: url("../font/PlaypenSans.ttf");
-}
-
-:root {
-  background-color: antiquewhite;
-  font-family: 'PlaypenSans';
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "PlaypenSans";
 }
 
-#menu {
+.navbar {
+  padding: 8px;
+  background-color: #333;
+  height: 70px;
+}
+
+.container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  
-  height: 75px;
-  list-style-type: none;
-
-  background-color: aqua;
+  list-style: none;
 }
 
-#menu li {
-  height: fit-content;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 10px;
+.item {
   display: flex;
-  align-items: center;
+  padding: 2px;
+}
 
-  background-color: red;
+.item.active .item-icon {
+  box-shadow: 0px 0px 16px 0px aqua;
+  border: 2px solid aqua;
+}
+
+.item.active .item-text {
+  transform: scale(1);
+}
+
+.item-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aqua;
+  top: 0;
+}
+
+.item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  background-color: black;
+  border-radius: 50%;
+  height: calc(50px);
+  width: calc(50px);
+}
+
+.item-text {
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  color: aqua;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #content-container {
