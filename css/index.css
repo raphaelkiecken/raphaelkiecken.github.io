@@ -15,6 +15,11 @@
   --bs-nav-link-color: #fff;
   --bs-accordion-btn-bg: transparent;
   --bs-accordion-btn-color: #fff;
+  --bs-accordion-btn-icon: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' ><path%20fill-rule='evenodd' %20d='M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z' /></svg>");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #fff;
 }
 
 body {
@@ -61,19 +66,11 @@ body {
 .tab-pane p {
   padding: 20px;
   width: 75%;
+  text-align: justify;
 }
 
 .text-bold {
   font-weight: bold;
-}
-
-.list-group-item {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  color: #000;
-  font-weight: bold;
-  padding: 20px;
 }
 
 .tab-pane .card-container {
@@ -98,6 +95,26 @@ body {
   background-color: transparent;
 }
 
-footer {
-  color: #fff;
+.competence-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.competence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  padding: 20px 0px 0px;
+}
+
+.img-fluid {
+  width: 15vh;
+  height: 15vh;
+  margin: 0px 10px 0;
 }
