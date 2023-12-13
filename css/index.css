@@ -20,35 +20,53 @@
   --bs-accordion-active-color: #fff;
   --bs-accordion-active-bg: transparent;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #fff;
+  --bs-card-color: #fff;
+  --bs-border-color-translucent: #fff;
 }
 
 body {
-  background-image: linear-gradient(75deg,
-        hsl(228deg 38% 28%) 0%,
-        hsl(229deg 37% 27%) 18%,
-        hsl(230deg 38% 25%) 30%,
-        hsl(231deg 38% 24%) 38%,
-        hsl(232deg 39% 23%) 43%,
-        hsl(233deg 39% 21%) 47%,
-        hsl(235deg 39% 20%) 50%,
-        hsl(235deg 40% 18%) 53%,
-        hsl(236deg 40% 17%) 59%,
-        hsl(238deg 39% 15%) 67%,
-        hsl(238deg 41% 14%) 81%,
-        hsl(240deg 41% 13%) 100%);
+  background-image: linear-gradient(285deg,
+      hsl(228deg 38% 28%) 0%,
+      hsl(228deg 39% 26%) 19%,
+      hsl(231deg 39% 25%) 32%,
+      hsl(232deg 39% 23%) 41%,
+      hsl(233deg 39% 21%) 46%,
+      hsl(234deg 40% 20%) 51%,
+      hsl(237deg 39% 18%) 56%,
+      hsl(236deg 40% 16%) 64%,
+      hsl(240deg 39% 15%) 78%,
+      hsl(240deg 40% 13%) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+footer {
+  height: 20vh;
+}
+
+.nav {
+  height: 8vh;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tab-pane {
-  height: 75vh;
+  height: calc(92vh - 8vw);
 }
 
-.tab-pane .text {
+.text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 100%;
+  font-size: 1.2rem;
 }
 
 .tab-pane .text-img-container {
@@ -63,7 +81,7 @@ body {
   width: 20vh;
 }
 
-.tab-pane p {
+.text p {
   padding: 20px;
   width: 75%;
   text-align: justify;
@@ -93,17 +111,45 @@ body {
 .accordion-item {
   width: 100%;
   background-color: transparent;
+  font-size: 1.2rem;
 }
 
-.competence-container {
+.accordion-button {
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.competence-container,
+.projets-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   height: 100%;
 }
 
-.competence {
+.projet p {
+  width: 40%;
+  text-align: justify;
+}
+
+.competence,
+.projet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+}
+
+.projet a {
+  color: #fff;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +160,12 @@ body {
 }
 
 .img-fluid {
-  width: 15vh;
+  width: auto;
   height: 15vh;
-  margin: 0px 10px 0;
+  margin: 0px 10px 0px;
+}
+
+.projet:hover .img-fluid {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }
