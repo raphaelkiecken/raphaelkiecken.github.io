@@ -41,7 +41,7 @@ body {
 }
 
 footer {
-  height: 20vh;
+  height: fit-content;
 }
 
 .nav {
