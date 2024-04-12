@@ -25,17 +25,19 @@
 }
 
 body {
-  background-image: linear-gradient(285deg,
-      hsl(228deg 38% 28%) 0%,
-      hsl(228deg 39% 26%) 19%,
-      hsl(231deg 39% 25%) 32%,
-      hsl(232deg 39% 23%) 41%,
-      hsl(233deg 39% 21%) 46%,
-      hsl(234deg 40% 20%) 51%,
-      hsl(237deg 39% 18%) 56%,
-      hsl(236deg 40% 16%) 64%,
-      hsl(240deg 39% 15%) 78%,
-      hsl(240deg 40% 13%) 100%);
+  background-image: linear-gradient(
+    285deg,
+    hsl(228deg 38% 28%) 0%,
+    hsl(228deg 39% 26%) 19%,
+    hsl(231deg 39% 25%) 32%,
+    hsl(232deg 39% 23%) 41%,
+    hsl(233deg 39% 21%) 46%,
+    hsl(234deg 40% 20%) 51%,
+    hsl(237deg 39% 18%) 56%,
+    hsl(236deg 40% 16%) 64%,
+    hsl(240deg 39% 15%) 78%,
+    hsl(240deg 40% 13%) 100%
+  );
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -111,7 +113,7 @@ footer {
 .accordion-item {
   width: 100%;
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .accordion-button {
