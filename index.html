@@ -52,7 +52,64 @@
         <div class="competence">
           <h2>Langages de programmation</h2>
           <div class="img-container">
-            <img src="img/java.png" class="img-fluid rounded-top" alt="" />
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#modalId"
+            >
+              <img src="img/java.png" class="img-fluid rounded-top" alt="" />
+            </button>
+            <div
+              class="modal fade"
+              id="modalId"
+              tabindex="-1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              
+              role="dialog"
+              aria-labelledby="modalTitleId"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                role="document"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Body</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Optional: Place to the bottom of scripts -->
+            <script>
+              const myModal = new bootstrap.Modal(
+                document.getElementById("modalId"),
+                options,
+              );
+            </script>
+            
             <img src="img/python.png" class="img-fluid rounded-top" alt="" />
             <img src="img/c.png" class="img-fluid rounded-top" alt="" />
           </div>
@@ -61,6 +118,7 @@
           <h2>Développement web</h2>
           <div class="img-container">
             <img src="img/html-5.png" class="img-fluid rounded-top" alt="" />
+            <img src="img/spring-boot.png" class="img-fluid rounded-top" alt="" />
           </div>
         </div>
         <div class="competence">
