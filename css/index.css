@@ -147,6 +147,7 @@ footer {
   border-radius: 10px;
   padding: 20px;
   width: fit-content;
+  height: fit-content;
 }
 
 .projet a {
@@ -170,4 +171,37 @@ footer {
 .projet:hover .img-fluid {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+.btn:focus {
+  background-color: transparent;
+}
+
+.btn:active {
+  background-color: transparent;
+}
+
+.modal-content {
+  background-image: linear-gradient(
+    285deg,
+    hsl(228deg 38% 28%) 0%,
+    hsl(228deg 39% 26%) 19%,
+    hsl(231deg 39% 25%) 32%,
+    hsl(232deg 39% 23%) 41%,
+    hsl(233deg 39% 21%) 46%,
+    hsl(234deg 40% 20%) 51%,
+    hsl(237deg 39% 18%) 56%,
+    hsl(236deg 40% 16%) 64%,
+    hsl(240deg 39% 15%) 78%,
+    hsl(240deg 40% 13%) 100%
+  );
 }
