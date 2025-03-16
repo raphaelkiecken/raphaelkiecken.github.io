@@ -24,6 +24,9 @@
     <li class="nav-item">
       <a href="#projets" class="nav-link" data-bs-toggle="tab">PROJETS</a>
     </li>
+    <li class="nav-item">
+      <a href="#experiences" class="nav-link" data-bs-toggle="tab">EXPERIENCE</a>
+    </li>
   </ul>
 </header>
 
@@ -154,64 +157,180 @@
               </div>
             </div>
           </div>
-          <div
-              class="modal fade"
-              id="cModal"
-              tabindex="-1"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              
-              role="dialog"
-              aria-labelledby="modalTitleId"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                role="document"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">
-                      C
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>
-                      J'ai appris les bases du C durant la première année de BUT. J'ai
-                      pu approfondir mes connaissances en C durant la deuxiéme année de
-                      BUT. Nous avons vu tout ce qui est pointeurs, structures, allocation
-                      dynamique, etc.
-                    </p>
-                  </div>
+          <div class="modal fade" id="cModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    C
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases du C durant la première année de BUT. J'ai
+                    pu approfondir mes connaissances en C durant la deuxiéme année de
+                    BUT. Nous avons vu tout ce qui est pointeurs, structures, allocation
+                    dynamique, etc.
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="competence">
           <h2>Développement web</h2>
           <div class="img-container">
-            <img src="img/html-5.png" class="img-fluid rounded-top" alt="" />
-            <img src="img/spring-boot.png" class="img-fluid rounded-top" alt="" />
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#htmlModal">
+              <img src="img/html-5.png" class="img-fluid rounded-top" alt="" />
+            </button> 
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#springModal">
+              <img src="img/spring-boot.png" class="img-fluid rounded-top" alt="" />
+            </button>
+          </div>
+          <div class="modal fade" id="htmlModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    HTML
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases du HTML durant la première année de BUT. J'ai
+                    pu approfondir mes connaissances en HTML durant la deuxiéme année de
+                    BUT. Nous avons vu tout ce qui est balises, formulaires, tableaux, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="springModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Spring Boot
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases du Spring Boot durant la deuxiéme année de BUT. J'ai
+                    pu approfondir mes connaissances en Spring Boot durant la deuxiéme année de
+                    BUT. Nous avons vu tout ce qui est les controllers, les services, les repositories, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="competence">
           <h2>Outils (Logiciels/Méthodes)</h2>
           <div class="img-container">
-            <img src="img/visual-studio.png" class="img-fluid rounded-top" alt="" />
-            <img src="img/access.png" class="img-fluid rounded-top" alt="" />
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#visualModal">
+              <img src="img/visual-studio.png" class="img-fluid rounded-top" alt="" />
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accessModal">
+              <img src="img/access.png" class="img-fluid rounded-top" alt="" />
+            </button>
+          </div>
+          <div class="modal fade" id="visualModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Visual Studio
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai commencé à utiliser Visual Studio durant le lycée. J'ai
+                    pu approfondir mes connaissances en Visual Studio durant la première année de
+                    BUT. Bien que les professeurs nous conseillés d'utiliser IntelliJ IDEA, j'ai
+                    préféré continuer avec Visual Studio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="accessModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    Access
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases d'Access durant la première année de BUT. J'ai
+                    pu approfondir mes connaissances en Access durant la deuxiéme année de
+                    BUT. Nous avons vu tout ce qui est création de tables, de requêtes, de formulaires, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="competence">
           <h2>Base de données</h2>
           <div class="img-container">
-            <img src="img/sql.png" class="img-fluid rounded-top" alt="" />
-            <img src="img/noSql.png" class="img-fluid rounded-top" alt="" />
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#slqModal">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" class="img-fluid rounded-top" alt="" />
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noSqlModal">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" class="img-fluid rounded-top" alt="" />
+            </button>
+          </div>
+          <div class="modal fade" id="slqModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    SQL
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases du SQL durant la première année de BUT. J'ai
+                    pu approfondir mes connaissances en SQL durant la deuxiéme année de
+                    BUT. Nous avons vu tout ce qui est création de tables, de requêtes, de procédures stockées, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="noSqlModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleId">
+                    NoSQL
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    J'ai appris les bases du NoSQL durant la troiséme année de BUT. J'ai
+                    pu approfondir mes connaissances en NoSQL durant la troiséme année de
+                    BUT. Nous avons vu tout ce qui est les bases de données orientées documents, orientées colonnes, orientées graphes, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
     </div>
@@ -349,6 +468,48 @@
       </div>
     </div>
 
+    <div class=" tab-pane fade" id="experiences" role="tabpanel">
+      <div class="accordion" id="experiences-accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
+              Alternance troisième année de BUT - En cours
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#experiences-accordion">
+            <div class="accordion-body">
+              <span class="text-bold">Lieu :</span> Pain de Minuit,
+              Nieppe<br />
+              <span class="text-bold">Début :</span> Septembre 2024<br />
+              <span class="text-bold">Fin :</span> N/A<br />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Stage de deuxième année de BUT - Terminé
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#experiences-accordion">
+            <div class="accordion-body">
+              <span class="text-bold">Lieu :</span> Pain de Minuit,
+              Nieppe<br />
+              <span class="text-bold">Début :</span> 15 avril 2024<br />
+              <span class="text-bold">Fin :</span> 15 juin 2024<br />
+              <span class="text-bold">Description :</span> Développement d'un site web et maintenance d'outils internes pour une entreprise qui brasse de la bière.<br />
+              <span class="text-bold">Compétences techniques :</span> HTML, CSS, JavaScript, PHP, SQL<br />
+              <span class="text-bold">Savoir-être :</span> Autonomie, Travail en équipe<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -363,9 +524,6 @@
   <ul class="list-group list-group-horizontal">
     <li class="list-group-item">
       <a href="mailto:raphael.kiecken.etu@univ-lille.fr">raphael.kiecken.etu@univ-lille.fr</a>
-    </li>
-    <li class="list-group-item">
-      <a href="tel:+337 68 80 18 38">07 68 80 18 38</a>
     </li>
   </ul>
 </footer>
